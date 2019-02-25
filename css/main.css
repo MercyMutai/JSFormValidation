@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    background: #f4f4f4;
+}
+
+main div {
+    padding: 10px;
+}
+
+main .before {
+    flex: 2;
+}
+
+main .target {
+    flex: 3;
+    background: #fff;
+}
+
+main .after {
+    flex: 2;
+}
+
+main div input,
+main div select {
+    display: block;
+    width: 97%;
+    padding: 8px;
+    margin: 16px 0 0 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+main div select {
+    width: 100%;
+    background: #fff;
+}
+
+button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width: 150px;
+    margin: 20px 0 0 0;
+}
+
+button[type="submit"] {
+    float: right;
+    background: skyblue;
+}

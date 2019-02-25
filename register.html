@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Handlers</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-brand"><a href="index.html">Mutai Techs</a></div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Github</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Service</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Programming</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Data Science</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="before"></div>
+        <div class="target">
+            <h2 style="text-align:center;">Register</h2>
+            <form action="main.html" name="register" onsubmit="event.preventDefault();return registerValidate();" novalidate>
+                <input type="text" name="fname" id="fname" placeholder="First Name..." required>
+                <input type="text" name="lname" id="lname" placeholder="Last Name..." required>
+                <input type="text" name="regno" id="regno" placeholder="Registration Number..." required>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+
+                <select name="faculty" id="faculty">
+                    <option value="">--Faculty--</option>
+                    <option value="fist">Information and Technology</option>
+                    <option value="spas">School of Pure and Applied Sciences</option>
+                    <option value="law">Schoolof Law</option>
+                    <option value="sobe">Schoolof Business and Economics</option>
+                </select>
+
+                <select name="dept" id="dept">
+                    <option value="">--Department--</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="bit">Business IT</option>
+                    <option value="software">Software</option>
+                </select>
+
+                <select name="course" id="course">
+                    <option value="">--Course--</option>
+                    <option value="comp">Bsc. Computer Science</option>
+                    <option value="seon">Bsc. Software Engineering</option>
+                    <option value="acmp">Bsc. Applied Computer Science</option>
+                    <option value="libi">Bsc. Library Information</option>
+                    <option value="bbit">Bsc. Business Information Technology</option>
+                </select>
+
+                <input type="file" id="img" placeholder="Select Avatar" />
+                <input type="password" name="pwd" id="pwd" placeholder="Password..." required>
+                <input type="password" name="cpwd" id="cpwd" placeholder="Confirm Password..." required>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+        <div class="after"></div>
+    </main>
+    <script src="js/design.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
